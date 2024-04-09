@@ -20,7 +20,7 @@
             width: 100%;
         }
         select {
-            padding: 10px;
+            padding: 15px; /* 增加填充以增加输入框高度 */
             margin: 5px;
             width: 30%; /* 调整宽度以适应水平排布 */
             max-width: 150px; /* 调整最大宽度以适应水平排布 */
@@ -33,6 +33,7 @@
         @media (max-width: 600px) {
             select {
                 width: 45%; /* 调整响应式设计以适应水平排布 */
+                padding: 20px; /* 移动端增加填充以增加输入框高度 */
             }
         }
     </style>
@@ -151,7 +152,7 @@
                 hourDiff--;
             }
 
-            const timeDifference = `时间差异：${hourDiff} 小时 和 ${minuteDiff} 分钟`;
+            const timeDifference = `时间差异：${hourDiff} 小时 ${minuteDiff} 分钟`;
             document.getElementById('timeDifference').innerText = timeDifference;
 
             // 将选定的小时和分钟存储在localStorage中
@@ -175,3 +176,4 @@
 </body>
 
 </html>
+
